@@ -15,8 +15,6 @@ npm install --save react-hamburger-menu
 
 Live demo: [cameronbourke.github.io/react-hamburger-menu](http://cameronbourke.github.io/react-hamburger-menu)
 
-http://username.github.io/repository/
-
 To build the example locally, clone this repo then run:
 
 ```

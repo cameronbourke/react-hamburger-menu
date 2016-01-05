@@ -13,7 +13,9 @@ npm install --save react-hamburger-menu
 
 ## Demo & Example
 
-Live demo: [cameronbourke.github.io/react-hamburger-menu](cameronbourke.github.io/react-hamburger-menu)
+Live demo: [cameronbourke.github.io/react-hamburger-menu](http://cameronbourke.github.io/react-hamburger-menu)
+
+http://username.github.io/repository/
 
 To build the example locally, clone this repo then run:
 
@@ -60,7 +62,7 @@ Note, not all props are required. All the props besides `isOpen` and `menuClicke
 ## Options
 
 Property  | Type | Default | Description
-------------- | -------------
+------------- | ------------- | --------- | ----------
 isOpen            | bool   | undefined | determines whether the menu is a hamburger or cross icon
 menuClicked       | func   | undefined | will be invoked when the component is clicked
 width             | number | 36        | the width of the icon

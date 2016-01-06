@@ -20265,7 +20265,8 @@
 				height: strokeWidth + 'px',
 				width: '100%',
 				background: props.color || '#000',
-				transition: animationDuration + 's ease',
+				transitionTimingFunction: 'ease',
+				transitionDuration: animationDuration + 's',
 				borderRadius: (props.borderRadius || 0) + 'px',
 				transformOrigin: 'center',
 				position: 'absolute'
@@ -20275,8 +20276,9 @@
 				marginTop: halfStrokeWidth
 			},
 			secondLine: {
-				transition: animationDuration / 4 + 's ease-out',
-				opacity: isOpen ? '0' : '100',
+				transitionTimingFunction: 'ease-out',
+				transitionDuration: animationDuration / 4 + 's',
+				opacity: isOpen ? '0' : '1',
 				top: halfHeight,
 				marginTop: halfStrokeWidth
 			},

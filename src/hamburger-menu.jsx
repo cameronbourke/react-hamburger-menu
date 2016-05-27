@@ -6,8 +6,8 @@ export default function HamburgerMenu(props) {
 	halfHeight        = `${parseInt(height.replace('px', '')) / 2}px`,
 	isOpen            = props.isOpen || false,
 	strokeWidth       = props.strokeWidth || 2,
-  halfStrokeWidth   = `-${strokeWidth / 2}`,
-  animationDuration = props.animationDuration || '0.4';
+    halfStrokeWidth   = `-${strokeWidth / 2}px`,
+    animationDuration = props.animationDuration || '0.4';
 
 	const getTransformValue = (isOpen, defaultPos, rotateVal) => (
 		`translate3d(0,${isOpen ? halfHeight : defaultPos},0) rotate(${isOpen ? `${rotateVal}deg` : '0'})`

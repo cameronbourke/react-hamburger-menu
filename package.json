@@ -1,6 +1,6 @@
 {
   "name": "react-hamburger-menu",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Dead simple Hamburger Menu to use as a mobile nav, with a bunch of styling options.",
   "main": "dist/index.js",
   "keywords": [
@@ -45,5 +45,8 @@
   },
   "peerDependencies": {
     "react": "0.14.5 || ^15.0.0"
+  },
+  "dependencies": {
+    "object-assign": "^4.1.0"
   }
 }

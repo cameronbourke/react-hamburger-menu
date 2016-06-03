@@ -1,4 +1,6 @@
 import React from 'react';
+var objectAssign = require('object-assign');
+
 
 export default function HamburgerMenu(props) {
 	const width       = `${props.width || 36}px`,
@@ -50,9 +52,9 @@ export default function HamburgerMenu(props) {
 
 	return (
 		<div style={styles.container} onClick={props.menuClicked}>
-		  <span style={Object.assign({}, styles.lineBase, styles.firstLine)}></span>
-		  <span style={Object.assign({}, styles.lineBase, styles.secondLine)}></span>
-		  <span style={Object.assign({}, styles.lineBase, styles.thirdLine)}></span>
+		  <span style={objectAssign({}, styles.lineBase, styles.firstLine)}></span>
+		  <span style={objectAssign({}, styles.lineBase, styles.secondLine)}></span>
+		  <span style={objectAssign({}, styles.lineBase, styles.thirdLine)}></span>
 		</div>
 	);
 };

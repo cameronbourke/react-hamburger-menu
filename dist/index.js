@@ -11,6 +11,8 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var objectAssign = require('object-assign');
+
 function HamburgerMenu(props) {
 	var width = (props.width || 36) + 'px',
 	    height = (props.height || 30) + 'px',
@@ -62,9 +64,9 @@ function HamburgerMenu(props) {
 	return _react2.default.createElement(
 		'div',
 		{ style: styles.container, onClick: props.menuClicked },
-		_react2.default.createElement('span', { style: Object.assign({}, styles.lineBase, styles.firstLine) }),
-		_react2.default.createElement('span', { style: Object.assign({}, styles.lineBase, styles.secondLine) }),
-		_react2.default.createElement('span', { style: Object.assign({}, styles.lineBase, styles.thirdLine) })
+		_react2.default.createElement('span', { style: objectAssign({}, styles.lineBase, styles.firstLine) }),
+		_react2.default.createElement('span', { style: objectAssign({}, styles.lineBase, styles.secondLine) }),
+		_react2.default.createElement('span', { style: objectAssign({}, styles.lineBase, styles.thirdLine) })
 	);
 };
 

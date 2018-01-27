@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function HamburgerMenu(props) {
 	const width       = `${props.width || 36}px`,
@@ -58,13 +59,13 @@ export default function HamburgerMenu(props) {
 };
 
 HamburgerMenu.PropTypes = {
-	isOpen: React.PropTypes.bool.isRequired,
-	menuClicked: React.PropTypes.func.isRequired,
-	width: React.PropTypes.number,
-	height: React.PropTypes.number,
-	strokeWidth: React.PropTypes.number,
-	rotate: React.PropTypes.number,
-	color: React.PropTypes.string,
-	borderRadius: React.PropTypes.number,
-	animationDuration: React.PropTypes.number
+	isOpen: PropTypes.bool.isRequired,
+	menuClicked: PropTypes.func.isRequired,
+	width: PropTypes.number,
+	height: PropTypes.number,
+	strokeWidth: PropTypes.number,
+	rotate: PropTypes.number,
+	color: PropTypes.string,
+	borderRadius: PropTypes.number,
+	animationDuration: PropTypes.number
 };

@@ -1,6 +1,6 @@
 {
   "name": "react-hamburger-menu",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Dead simple Hamburger Menu to use as a mobile nav, with a bunch of styling options.",
   "main": "dist/HamburgerMenu.js",
   "keywords": [

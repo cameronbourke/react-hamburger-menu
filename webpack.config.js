@@ -1,26 +1,34 @@
-const context = __dirname + '/example';
+const webpack = require('webpack');
+const path = require('path');
 
 module.exports = {
-	context: context,
-	entry: './app.jsx',
+	entry: path.join(__dirname, 'src/index.js'),
 	output: {
-		path: context,
-		pathinfo: true,
-		filename: 'bundle.js'
+		path: path.join(__dirname, 'dist'),
+		filename: 'react-hamburger-menu.min.js',
+		library: 'ReactHamburgerMenu',
+		libraryTarget: 'umd',
+		umdNamedDefine: true,
 	},
 	module: {
-		loaders: [
+		rules: [
 			{
-				test: /\.jsx$/,
-				loader: 'babel',
+				test: /\.js$/,
 				exclude: /node_modules/,
-				query: {
-					cacheDirectory: true
-				}
+				loader: 'babel-loader',
 			}
 		]
 	},
 	resolve: {
-		extensions: ['', '.json', '.js', '.jsx']
-	}
+		extensions: ['.json', '.js', '.jsx'],
+	},
+	plugins: [
+		new webpack.optimize.UglifyJsPlugin({
+			minimize: true,
+			compress: {
+				warnings: false,
+			},
+		}),
+	],
 };
+

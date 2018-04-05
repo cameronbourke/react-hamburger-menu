@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HamburgerMenu from '../src/hamburger-menu';
+import HamburgerMenu from '../src/HamburgerMenu';
 
 class App extends React.Component {
 	constructor() {

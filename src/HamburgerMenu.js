@@ -58,7 +58,7 @@ export default function HamburgerMenu(props) {
 	);
 };
 
-HamburgerMenu.PropTypes = {
+HamburgerMenu.propTypes = {
 	isOpen: PropTypes.bool.isRequired,
 	menuClicked: PropTypes.func.isRequired,
 	width: PropTypes.number,

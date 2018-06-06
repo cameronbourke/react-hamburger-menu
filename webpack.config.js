@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports = {
-	entry: path.join(__dirname, 'src/index.js'),
+	entry: path.join(__dirname, 'src/HamburgerMenu.js'),
 	output: {
 		path: path.join(__dirname, 'dist'),
 		filename: 'react-hamburger-menu.min.js',

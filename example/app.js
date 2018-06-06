@@ -27,7 +27,7 @@ class App extends React.Component {
 					rotate={0}
 					color='black'
 					borderRadius={0}
-					animationDuration='0.5'
+					animationDuration={0.5}
 				/>
 			  <HamburgerMenu
 		      isOpen={this.state.open[0]}
@@ -38,7 +38,7 @@ class App extends React.Component {
 					rotate={0}
 		      color='black'
 					borderRadius={5}
-		      animationDuration='0.3'
+		      animationDuration={0.3}
 		    />
 				<HamburgerMenu
 					isOpen={this.state.open[1]}
@@ -49,7 +49,7 @@ class App extends React.Component {
 					rotate={0}
 					color='black'
 					borderRadius={5}
-					animationDuration='0.4'
+					animationDuration={0.4}
 				/>
 				<HamburgerMenu
 					isOpen={this.state.open[2]}
@@ -60,7 +60,7 @@ class App extends React.Component {
 					rotate={0}
 					color='black'
 					borderRadius={5}
-					animationDuration='0.75'
+					animationDuration={0.75}
 				/>
 			</div>
 		);

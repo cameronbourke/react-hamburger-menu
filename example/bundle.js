@@ -11292,7 +11292,7 @@ function (_React$Component) {
       rotate: 0,
       color: "black",
       borderRadius: 0,
-      animationDuration: "0.5"
+      animationDuration: 0.5
     }), _react.default.createElement(_HamburgerMenu.default, {
       isOpen: this.state.open[0],
       menuClicked: this.handleClick.bind(this, 0),
@@ -11302,7 +11302,7 @@ function (_React$Component) {
       rotate: 0,
       color: "black",
       borderRadius: 5,
-      animationDuration: "0.3"
+      animationDuration: 0.3
     }), _react.default.createElement(_HamburgerMenu.default, {
       isOpen: this.state.open[1],
       menuClicked: this.handleClick.bind(this, 1),
@@ -11312,7 +11312,7 @@ function (_React$Component) {
       rotate: 0,
       color: "black",
       borderRadius: 5,
-      animationDuration: "0.4"
+      animationDuration: 0.4
     }), _react.default.createElement(_HamburgerMenu.default, {
       isOpen: this.state.open[2],
       menuClicked: this.handleClick.bind(this, 2),
@@ -11322,7 +11322,7 @@ function (_React$Component) {
       rotate: 0,
       color: "black",
       borderRadius: 5,
-      animationDuration: "0.75"
+      animationDuration: 0.75
     }));
   };
 
@@ -21826,7 +21826,7 @@ function HamburgerMenu(props) {
 }
 
 ;
-HamburgerMenu.PropTypes = {
+HamburgerMenu.propTypes = {
   isOpen: _propTypes.default.bool.isRequired,
   menuClicked: _propTypes.default.func.isRequired,
   width: _propTypes.default.number,

@@ -70,6 +70,7 @@ rotate            | number | 0         | the rotation of the icon, eg {45} would
 color             | string | #000      | the color of both icons
 borderRadius      | number | 0         | the border radius of the lines
 animationDuration | number | 0.4       | the length of time it takes for the icon transitions to complete.
+className					| string | undefined | the class name for the container element
 
 ## Todo
 

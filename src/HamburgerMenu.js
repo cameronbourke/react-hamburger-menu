@@ -54,12 +54,9 @@ export default function HamburgerMenu(props) {
     <div
       style={styles.container}
       className={props.className}
-      onClick={props.menuClicked}
-    >
+      onClick={props.menuClicked}>
       <span style={Object.assign({}, styles.lineBase, styles.firstLine)}></span>
-      <span
-        style={Object.assign({}, styles.lineBase, styles.secondLine)}
-      ></span>
+      <span style={Object.assign({}, styles.lineBase, styles.secondLine)}></span>
       <span style={Object.assign({}, styles.lineBase, styles.thirdLine)}></span>
     </div>
   );

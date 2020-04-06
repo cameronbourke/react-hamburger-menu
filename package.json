@@ -20,8 +20,7 @@
     "build:compile": "babel src --out-dir dist",
     "build:umd": "webpack",
     "build:example": "webpack --config ./example/webpack.config.js --progress --colors",
-    "build:all": "yarn run build:compile && yarn run build:umd && yarn run build:example",
-    "test": "tape ./dist/**/*.spec.js | tap-spec"
+    "build:all": "yarn run build:compile && yarn run build:umd && yarn run build:example"
   },
   "author": "Cameron Bourke <cameron2295@gmail.com> (http://cameronbourke.com/)",
   "license": "MIT",
@@ -43,7 +42,8 @@
     "tap-spec": "4.1.1",
     "tape": "4.4.0",
     "webpack": "^3.11.0",
-    "webpack-dev-server": "^2.11.1"
+    "webpack-dev-server": "^2.11.1",
+    "np": "6.2.0"
   },
   "peerDependencies": {
     "prop-types": ">=15.5.7",

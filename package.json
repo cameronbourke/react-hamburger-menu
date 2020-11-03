@@ -1,8 +1,9 @@
 {
   "name": "react-hamburger-menu",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Dead simple Hamburger Menu to use as a mobile nav, with a bunch of styling options.",
   "main": "dist/HamburgerMenu.js",
+  "types": "index.d.ts",
   "keywords": [
     "react",
     "react-component",
@@ -25,7 +26,8 @@
   "author": "Cameron Bourke <cameron2295@gmail.com> (http://cameronbourke.com/)",
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "index.d.ts"
   ],
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.40",
